@@ -1,0 +1,21 @@
+<div class="col-md-6 offset-md-3">
+  <h3>Create Student</h3>
+  <form [formGroup]="formCreate" (ngSubmit)="createBook()">
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" formControlName="tittle">
+    </div>
+
+    <div class="form-group">
+      <label>Author</label>
+      <input type="text" class="form-control" formControlName="author">
+    </div>
+
+    <div class="form-group">
+      <label>Description</label>
+      <input type="text" class="form-control" formControlName="description">
+    </div>
+
+    <button class="btn btn-success" type="submit">Create</button>
+  </form>
+</div>

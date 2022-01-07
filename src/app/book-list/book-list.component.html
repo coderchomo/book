@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <td>Id</td>
+    <td>Tittle</td>
+    <td>Author</td>
+    <td>Description</td>
+    <td>Edit</td>
+    <td>Delete</td>
+  </tr>
+  <tr *ngFor="let book of books">
+    <td>{{book.id}}</td>
+    <td>{{book.tittle}}</td>
+    <td>{{book.author}}</td>
+    <td>{{book.description}}</td>
+    <td><a routerLink="/edit-book/{{book.id}}">Edit</a></td>
+    <td><a routerLink="/delete-book/{{book.id}}">Delete</a></td>
+  </tr>
+</table>
